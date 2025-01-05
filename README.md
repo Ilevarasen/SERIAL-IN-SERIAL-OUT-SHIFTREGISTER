@@ -1,18 +1,18 @@
-### NAME:ILEVARASEN S
+### NAME: ILEVARASEN S
+### REG NO: 24900688
+### EXP NO 6: IMPLEMENTATION OF SERIAL IN SERIAL OUT SHIFT REGISTER USING VERILOG HDL
 
-### REGNO:24900688
-
-## EXPERIMENT 6: SERIAL IN SERIAL OUT SHIFTREGISTER
-
-## AIM:
+### **AIM:**
 
 To implement  SISO Shift Register using verilog and validating their functionality using their functional tables
 
-## SOFTWARE REQUIRED:
+###  **SOFTWARE REQUIRED:**
 
 Quartus prime
 
-## SISO SHIFT REGISTER:
+### **THEORY:**
+
+### **SISO SHIFT REGISTER**
 
 A Serial-In Serial-Out shift register is a sequential logic circuit that allows data to be shifted in and out one bit at a time in a serial manner. It consists of a cascade of flip-flops connected in series, forming a chain. The input data is applied to the first flip-flop in the chain, and as the clock pulses, the data propagates through the flip-flops, ultimately appearing at the output.
 
@@ -25,16 +25,27 @@ Figure 01 4 Bit SISO Register
 The synchronous nature of the flip-flops ensures that the shifting of data occurs in a coordinated manner. When the clock signal rises, the input data is sampled and stored in the first flip-flop. On subsequent clock pulses, the stored data propagates through the flip-flops, moving from one flip-flop to the next.
 Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and an output (Q). The D input represents the data to be loaded into the flip-flop, while the CLK input is connected to the common clock signal. The output (Q) of each flip-flop is connected to the D input of the next flip-flop, forming a cascade.
 
-## PROCEDURE :
-Implementing shit in Verilog HDL (Hardware Description Language) involves translating the simplified Boolean expressions into Verilog code to describe the behavior of digital circuits. The basic building blocks in Verilog is module. The module represent a combinational circuit. Use logical operators (&, |, ~, ^) to implement Boolean functions directly. Use built-in gate primitives for basic functions. Use University program VWF to verify the functionality of your Verilog modules. Create waveform and check outputs against expected results.
-## PROGRAM :
-![Screenshot 2024-12-12 133040](https://github.com/user-attachments/assets/235fb92a-ade3-4bb6-808a-6c93883a02df)
+### **PROCEDURE**
+1.Initialize the shift register to a known state (e.g., all zeros).
 
-## RTL LOGIC FOR SISO SHIFT REGISTER:
-![Screenshot 2024-12-12 133011](https://github.com/user-attachments/assets/0568ed57-6898-4480-ad54-87757247b2dd)
+2.Input a bit serially into the shift register.
 
-## TIMING DIGRAMS FOR SISO SHIFT REGISTER:
-![Screenshot 2024-12-12 132927](https://github.com/user-attachments/assets/f740fa0a-4223-486c-8cb6-4d3d8cfa6062)
+3.Shift the contents of the register one position to the right (or left). 
 
-## RESULT:
-Implemented SISO Shift Register using verilog and validating their functionality using their functional tables.
+4.Output the shifted bit from the last stage of the register. 
+
+5.Repeat steps 2-4 for each bit you want to input and shift
+
+### **PROGRAM**
+![Screenshot 2024-12-31 202438](https://github.com/user-attachments/assets/e2bf625c-b9d6-4832-98bc-943858d99e53)
+
+
+### **RTL LOGIC FOR SISO Shift Register**
+![Screenshot 2024-12-31 202425](https://github.com/user-attachments/assets/4309cda2-ed47-48b0-b41c-6974516b074c)
+
+
+### **TIMING DIGRAMS FOR SISO Shift Register**
+![siso waveform](https://github.com/user-attachments/assets/6cf3657d-59a1-468a-93fc-821999861153)
+
+### **RESULTS**
+THE IMPLEMENTATION OF SERIAL-IN-SERIAL-OUT-SHIFTREGISTER IS TESTED AND VERIFIED
